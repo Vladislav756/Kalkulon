@@ -6,22 +6,20 @@ int main()
 	int number = 0;
 	int number2 = 0;
 	char action;
-	std::cout << "Insert 2 numbers" << std::endl;
-	std::cin >> number >> number2;
-	std::cout << "Choose action" << std::endl;
-	std::cin >> action;
+	std::cout << "Calculator" << std::endl;
+	std::cin >> number >> action >> number2;
 	switch (action)
 	{
-	case 1:
+	case '+':
 		std::cout << number + number2 << std::endl;
 		break;
-	case 2:
+	case '-':
 		std::cout << number - number2 << std::endl;
 		break;
-	case 3:
+	case '*':
 		std::cout << number * number2 << std::endl;
 		break;
-	case 4:
+	case '/':
 		std::cout << number / number2 << std::endl;
 		break;
 	default:
